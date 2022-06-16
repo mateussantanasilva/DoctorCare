@@ -194,7 +194,7 @@ if(window.screen.width >= 1024){
         #home header,
         #home .content,
         #home img,
-        #home #statis,
+        #home #stats,
         #services,
         #services header,
         #services .card,
