@@ -13,6 +13,7 @@
     --green-pastel: hsl(calc(var(--primary-number) - 22), 23%, 89%);
     --green-pastel-2: hsl(calc(var(--primary-number) + 10), 14%, 97%);
     --bg-light: hsl(180, 14%, 97%);
+    --filter-brightness: hsl(calc(var(--primary-number) - 1), 100%, 31%);
 
     --height-nav: 7.2rem;
 }
@@ -321,12 +322,12 @@ body.menu-expanded #menu{
     padding-block: 0;
 }
 
-#home::before{
+body section#home:before{
     content: '';
     background-color: var(--green-pastel);
 
     width: 100%;
-    height: calc(76% + var(--height-nav));
+    height: calc(108rem + var(--height-nav));
 
     display: block;
     z-index: -1;
@@ -525,6 +526,12 @@ footer .wrapper .social-links{
 
 /* Configs responsive */
 
+@media (min-width: 768px){
+    body section#home:before{
+        height: calc(100rem + var(--height-nav));
+    }
+}
+
 @media (min-width: 1024px){
     /* Configs gerais */
     body{
@@ -596,6 +603,7 @@ footer .wrapper .social-links{
         transition: 300ms;
     }
 
+    nav#navigation .wrapper #menu ul a.active,
     nav#navigation .wrapper #menu ul a:hover{
         opacity: 1;
         font-weight: 700;
@@ -628,6 +636,7 @@ footer .wrapper .social-links{
         transition: 300ms;
     }
 
+    nav#navigation.scroll .wrapper #menu ul a.active,
     nav#navigation.scroll .wrapper #menu ul a:hover{
         opacity: 1;
         font-weight: 700;
@@ -666,10 +675,9 @@ footer .wrapper .social-links{
         border-color: #fff;
     }
 
-    nav#navigation.scroll div.wrapper a.active#btn-menu-expanded:hover,
+    nav#navigation.scroll #menu a#btn-menu-expanded.active,
     nav#navigation.scroll div.wrapper a#btn-menu-expanded:hover{
-        filter: brightness(1.2);
-        color: #fff;
+        background-color: var(--filter-brightness);
     }
 
     /* Configs home */
@@ -677,8 +685,8 @@ footer .wrapper .social-links{
         padding-top: var(--height-nav);
     }
 
-    #home:before{
-        height: calc(78% + var(--height-nav));
+    body section#home:before{
+        height: calc(65rem + var(--height-nav));
     }
 
     #home .wrapper {
