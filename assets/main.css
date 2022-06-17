@@ -89,6 +89,7 @@ section .content .btn-whats{
     text-transform: uppercase;
     line-height: 1.8rem;
     text-decoration: none;
+    text-align: center;
 
     display: flex;
     justify-content: center;
@@ -284,12 +285,17 @@ body.menu-expanded #menu{
 }
 
 #menu #btn-menu-expanded{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     text-decoration: none;
     color: var(--primary-color);
     font-weight: 700;
     font-size: 1.8rem;
     text-transform: uppercase;
     line-height: 2.3rem;
+    text-align: center;
 
     background-color: #fff;
     border: none;
@@ -297,9 +303,7 @@ body.menu-expanded #menu{
 
     margin-bottom: 8rem;
     padding: 1.6rem 3.2rem;
-
-    width: 27.4rem;
-    height: 5.5rem;
+    width: fit-content;
 
     transition: 300ms;
 }
