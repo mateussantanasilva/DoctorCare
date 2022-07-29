@@ -1,7 +1,9 @@
 # DoctorCare
 Projeto de uma página institucional no formato one page sobre um centro médico, a construição foi realizada durante a trilha origin da semana nlw 8 da rocketseat.
 
-![Preview](https://github.com/mateussantanasilva/DoctorCare/blob/main/assets/img/Capa.png)
+<div align="center">
+    <img src="./.github/front-cover.png" width="90%" />
+</div>
 
 ## 💻 Acesse o projeto
 https://mateussantanasilva.github.io/DoctorCare/
