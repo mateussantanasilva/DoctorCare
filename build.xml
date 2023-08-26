@@ -1,0 +1,5 @@
+<project name="BackupProject" default="zip">
+    <target name="zip">
+        <zip destfile="backup.zip" basedir="." includes="**/*.*"/>
+    </target>
+</project>
